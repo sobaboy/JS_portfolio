@@ -34,3 +34,75 @@ h1 {
 h1:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
+/* Bookmarks */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: rgba(0, 0, 0, 0.581);
+  color: white;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 10px;
+}
+
+.item:hover {
+  background: rgba(0, 0, 0, 0.827);
+}
+
+.name {
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.name a {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.name {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.fa-regular {
+  float: right;
+  cursor: pointer;
+  z-index: 2;
+  top: -17px;
+  right: -16px;
+  position: absolute;
+}
+
+.name img {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  vertical-align: sub;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .name {
+    justify-content: center;
+  }
+}
