@@ -17,8 +17,6 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
-    <!-- js -->
-    <script src="script.js"></script>
   </head>
   <body>
     <!-- Open Modal -->
@@ -53,5 +51,31 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <i class="fa-regular fa-circle-xmark close-icon" id="close-modal"></i>
+        <div class="modal-header">
+          <h3>Add Bookmark</h3>
+        </div>
+        <div class="modal-content">
+          <form id="bookmark-form">
+            <!-- Website Name -->
+            <div class="form-group">
+              <label for="website-name" class="form-label">Website Name</label>
+              <input type="text" class="form-input" id="website-name" />
+            </div>
+            <!-- Website URL -->
+            <div class="form-group">
+              <label for="website-URL" class="form-label">Website URL</label>
+              <input type="text" class="form-input" id="website-URL" />
+              <button type="submit">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="script.js"></script>
   </body>
 </html>
